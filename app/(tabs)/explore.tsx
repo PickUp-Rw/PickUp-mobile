@@ -2,6 +2,7 @@ import Ionicons from "@expo/vector-icons/Ionicons";
 import { StyleSheet, View, Text } from "react-native";
 
 import ParallaxScrollView from "@/components/ParallaxScrollView";
+import { FontAwesome6 } from "@expo/vector-icons";
 
 export default function TabTwoScreen() {
   return (
@@ -10,8 +11,8 @@ export default function TabTwoScreen() {
       headerImage={<Ionicons size={310} name="code-slash" color={"#fff"} />}
     >
       <View className="flex flex-1 bg-white h-full">
-        <View className="flex flex-1 justify-center items-center bg-white">
-          <Text className="font-medium">Explore</Text>
+        <View className="bg-appcolor p-4 rounded-xl flex items-center justify-center">
+          <FontAwesome6 name="nfc-directional" size={44} color="#fff" />
         </View>
       </View>
     </ParallaxScrollView>
